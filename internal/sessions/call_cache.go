@@ -66,7 +66,8 @@ const callCacheVersion = "calls-v15"
 // (zcode 1 left out every call of a session holding one copy).
 // antigravity 1: a Gemini deployment's name with any one letter after it
 // (gemini-4-argon-d) is its model's (GeminiDeployment).
-var callParseVersions = map[string]int{"antigravity": 1, "cindy": 1, "codex": 3, "zcode": 2}
+// antigravity 2: a call keeps its step's time and first token (Millis, TTFT).
+var callParseVersions = map[string]int{"antigravity": 2, "cindy": 1, "codex": 3, "zcode": 2}
 
 // CallCacheVersion is callCacheVersion and callParseVersions, for a cache
 // of what is made of the calls (usage's requests-v1.bin and heatmap): a
